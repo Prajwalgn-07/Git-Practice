@@ -17,15 +17,15 @@ public class Main {
                 System.out.println("enter how many numbers you want to add: ");
                 int number= input.nextInt();
                 ArrayList<Double>values=new ArrayList<>();
+                System.out.println("Enter the values");
                 for(int i=0;i<number;i++){
-                    System.out.println("Enter the values"+"\n");
                     values.add(input.nextDouble());
                 }
                 Addition addition=new Addition(values);
-                System.out.println("the sum is"+addition.add());
+                System.out.println("The sum is: "+addition.add());
             }
             else if(choice==2){
-                System.out.println("Enter the two numbers you want to subtract"+"\n");
+                System.out.println("Enter the two numbers you want to subtract");
                 double firstNumber= input.nextDouble();
                 double secondNumber= input.nextDouble();
                 Subtraction subtraction=new Subtraction(firstNumber,secondNumber);
@@ -35,6 +35,7 @@ public class Main {
                 System.out.println("Enter the number of numbers you want to multiply");
                 int count= input.nextInt();
                 ArrayList<Double>values=new ArrayList<>();
+                System.out.println("Enter the values");
                 for(int i=0;i<count;i++){
                     values.add(input.nextDouble());
                 }
@@ -42,9 +43,9 @@ public class Main {
                 System.out.println("The product is:"+multiplication.multiply());
             }
             else if(choice==4){
-                System.out.println("Enter the dividend"+"\n");
+                System.out.println("Enter the dividend");
                 double dividend= input.nextInt();
-                System.out.println("Enter the divisor"+"\n");
+                System.out.println("Enter the divisor");
                 double divisor= input.nextInt();
                 Division division=new Division(dividend,divisor);
                 ArrayList<Double>result=division.divide();
