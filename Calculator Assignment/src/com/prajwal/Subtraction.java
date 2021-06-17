@@ -1,15 +1,15 @@
 package com.prajwal;
 
 public class Subtraction {
-    private int a;
-    private int b;
+    private double a;
+    private double b;
 
-    public Subtraction(int a, int b) {
+    public Subtraction(double a, double b) {
         this.a = a;
         this.b = b;
     }
-    public int Subtract(){
-        int temp=this.a-this.b;
+    public double Subtract(){
+        double temp=this.a-this.b;
         return temp;
     }
 }
